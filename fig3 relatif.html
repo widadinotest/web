@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Figure 3 – Positionnement Relatif</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+
+    /* Conteneur principal : colonne flex */
+    .container {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      width: 290px;
+    }
+
+    /* Rose : pleine largeur */
+    .rose {
+      position: relative;
+      background-color: #e8a0a0;
+      border: 2px solid #5b7fa6;
+      height: 100px;
+    }
+
+    /* Ligne du bas : flex row */
+    .ligne-bas {
+      display: flex;
+      gap: 10px;
+    }
+
+    /* Beige et bleu : moitié chacun */
+    .beige, .bleu {
+      position: relative;
+      flex: 1;
+      height: 115px;
+      border: 2px solid #5b7fa6;
+    }
+
+    .beige { background-color: #c8b98a; }
+    .bleu  { background-color: #6d9ed4; }
+  </style>
+</head>
+<body>
+
+  <h2>Figure 3 – Positionnement Relatif</h2>
+
+  <div class="container">
+    <div class="rose"></div>
+    <div class="ligne-bas">
+      <div class="beige"></div>
+      <div class="bleu"></div>
+    </div>
+  </div>
+
+</body>
+</html>

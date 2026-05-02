@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Figure 2 – Positionnement Absolu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+
+    .container {
+      position: relative;
+      width: 360px;
+      height: 290px;
+    }
+
+    .box {
+      position: absolute;
+      width: 130px;
+      height: 120px;
+      border: 2px solid #5b7fa6;
+    }
+
+    /* Chaque boite décalée de +110px (left) et +80px (top) */
+    .rose  { background-color: #e8a0a0; top: 0px;   left: 0px;   }
+    .beige { background-color: #c8b98a; top: 80px;  left: 110px; }
+    .bleu  { background-color: #6d9ed4; top: 160px; left: 220px; }
+  </style>
+</head>
+<body>
+
+  <h2>Figure 2 – Positionnement Absolu</h2>
+
+  <div class="container">
+    <div class="box rose"></div>
+    <div class="box beige"></div>
+    <div class="box bleu"></div>
+  </div>
+
+</body>
+</html>

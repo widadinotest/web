@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Figure 3 – Positionnement Absolu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+
+    .container {
+      position: relative;
+      width: 290px;
+      height: 235px;
+    }
+
+    .box {
+      position: absolute;
+      border: 2px solid #5b7fa6;
+    }
+
+    /* Rose : pleine largeur en haut */
+    .rose  {
+      background-color: #e8a0a0;
+      width: 286px;
+      height: 100px;
+      top: 0px;
+      left: 0px;
+    }
+
+    /* Beige : bas gauche */
+    .beige {
+      background-color: #c8b98a;
+      width: 138px;
+      height: 115px;
+      top: 115px;
+      left: 0px;
+    }
+
+    /* Bleu : bas droite */
+    .bleu  {
+      background-color: #6d9ed4;
+      width: 138px;
+      height: 115px;
+      top: 115px;
+      left: 148px;
+    }
+  </style>
+</head>
+<body>
+
+  <h2>Figure 3 – Positionnement Absolu</h2>
+
+  <div class="container">
+    <div class="box rose"></div>
+    <div class="box beige"></div>
+    <div class="box bleu"></div>
+  </div>
+
+</body>
+</html>

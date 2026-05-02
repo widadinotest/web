@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Figure 2 – Bootstrap</title>
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+  <style>
+    .box {
+      width: 130px;
+      height: 120px;
+      border: 2px solid #5b7fa6;
+    }
+    .rose  { background-color: #e8a0a0; }
+    .beige { background-color: #c8b98a; }
+    .bleu  { background-color: #6d9ed4; }
+  </style>
+</head>
+<body class="p-4">
+
+  <h2>Figure 2 – Bootstrap</h2>
+
+  <!-- Bootstrap fournit position-relative et position-absolute -->
+  <div class="position-relative" style="width: 360px; height: 290px;">
+    <div class="box rose position-absolute" style="top: 0px; left: 0px;"></div>
+    <div class="box beige position-absolute" style="top: 80px; left: 110px;"></div>
+    <div class="box bleu position-absolute" style="top: 160px; left: 220px;"></div>
+  </div>
+
+</body>
+</html>

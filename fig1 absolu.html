@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Figure 1 – Positionnement Absolu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+
+    .container {
+      position: relative;
+      width: 200px;
+      height: 340px;
+    }
+
+    .box {
+      position: absolute;
+      width: 180px;
+      height: 100px;
+      border: 2px solid #5b7fa6;
+    }
+
+    .rose  { background-color: #e8a0a0; top: 0px;   }
+    .beige { background-color: #c8b98a; top: 115px; }
+    .bleu  { background-color: #6d9ed4; top: 230px; }
+  </style>
+</head>
+<body>
+
+  <h2>Figure 1 – Positionnement Absolu</h2>
+
+  <div class="container">
+    <div class="box rose"></div>
+    <div class="box beige"></div>
+    <div class="box bleu"></div>
+  </div>
+
+</body>
+</html>

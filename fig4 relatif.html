@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Figure 4 – CSS Grid (Relatif)</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+
+    /*
+      CSS Grid : grille 2x2
+      On remplit seulement 3 cellules sur 4
+      La 4ème (bas droite) reste vide naturellement
+    */
+    .container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-template-rows: 1fr 1fr;
+      gap: 10px;
+      width: 290px;
+      height: 235px;
+    }
+
+    .box {
+      border: 2px solid #5b7fa6;
+    }
+
+    .rose  { background-color: #e8a0a0; grid-column: 1; grid-row: 1; }
+    .bleu  { background-color: #6d9ed4; grid-column: 2; grid-row: 1; }
+    .beige { background-color: #c8b98a; grid-column: 1; grid-row: 2; }
+    /* grid-column: 2 / grid-row: 2 → vide, pas de div */
+  </style>
+</head>
+<body>
+
+  <h2>Figure 4 – CSS Grid (Positionnement Relatif)</h2>
+
+  <div class="container">
+    <div class="box rose"></div>
+    <div class="box bleu"></div>
+    <div class="box beige"></div>
+    <!-- 4ème cellule vide -->
+  </div>
+
+</body>
+</html>

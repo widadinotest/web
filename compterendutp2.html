@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Compte Rendu TP2 – CSS & Bootstrap</title>
+  <style>
+    * { box-sizing: border-box; }
+    body {
+      font-family: Arial, sans-serif;
+      max-width: 800px;
+      margin: 0 auto;
+      padding: 30px 20px;
+      background: #f5f8ff;
+      color: #333;
+    }
+
+    h1 {
+      color: #4a7ab5;
+      border-bottom: 3px solid #4a7ab5;
+      padding-bottom: 10px;
+      margin-bottom: 5px;
+    }
+
+    .info {
+      color: #777;
+      font-size: 0.9em;
+      margin-bottom: 30px;
+    }
+
+    h2 {
+      color: #5b7fa6;
+      margin-top: 35px;
+      margin-bottom: 15px;
+      font-size: 1.2em;
+    }
+
+    /* Tableau des figures */
+    table {
+      width: 100%;
+      border-collapse: collapse;
+      background: white;
+      border-radius: 8px;
+      overflow: hidden;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.08);
+    }
+
+    thead {
+      background: #4a7ab5;
+      color: white;
+    }
+
+    th, td {
+      padding: 12px 16px;
+      text-align: left;
+      border-bottom: 1px solid #eee;
+    }
+
+    td:first-child {
+      font-weight: bold;
+      color: #4a7ab5;
+      width: 120px;
+    }
+
+    /* Boutons liens */
+    a.btn {
+      display: inline-block;
+      padding: 6px 14px;
+      border-radius: 20px;
+      text-decoration: none;
+      font-size: 0.85em;
+      margin-right: 6px;
+      transition: opacity 0.2s;
+    }
+    a.btn:hover { opacity: 0.8; }
+
+    a.btn-abs  { background: #5b7fa6; color: white; }
+    a.btn-rel  { background: #88aa66; color: white; }
+    a.btn-bst  { background: #c07030; color: white; }
+
+    /* Légende */
+    .legende {
+      display: flex;
+      gap: 15px;
+      margin-top: 12px;
+      font-size: 0.82em;
+      flex-wrap: wrap;
+    }
+    .legende span {
+      display: flex;
+      align-items: center;
+      gap: 6px;
+    }
+    .dot {
+      width: 12px; height: 12px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+  </style>
+</head>
+<body>
+
+  <h1>📄 Compte Rendu – TP N°2</h1>
+  <p class="info">CSS & Bootstrap – Première Année Génie Informatique – ENSA Al Hoceima – 2025/2026</p>
+
+  <!-- ===================== EXERCICE 1 ===================== -->
+  <h2>🔷 Exercice 1 – Positionnement des boîtes</h2>
+
+  <div class="legende">
+    <span><span class="dot" style="background:#5b7fa6;"></span> Positionnement Absolu</span>
+    <span><span class="dot" style="background:#88aa66;"></span> Positionnement Relatif</span>
+    <span><span class="dot" style="background:#c07030;"></span> Bootstrap</span>
+  </div>
+
+  <br>
+
+  <table>
+    <thead>
+      <tr>
+        <th>Figure</th>
+        <th>Description</th>
+        <th>Solutions</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Figure 1</td>
+        <td>3 boîtes empilées verticalement</td>
+        <td>
+          <a class="btn btn-abs" href="fig1_absolu.html">Absolu</a>
+          <a class="btn btn-rel" href="fig1_relatif.html">Relatif</a>
+          <a class="btn btn-bst" href="fig1_bootstrap.html">Bootstrap</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Figure 2</td>
+        <td>3 boîtes en escalier diagonal</td>
+        <td>
+          <a class="btn btn-abs" href="fig2_absolu.html">Absolu</a>
+          <a class="btn btn-rel" href="fig2_relatif.html">Relatif</a>
+          <a class="btn btn-bst" href="fig2_bootstrap.html">Bootstrap</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Figure 3</td>
+        <td>1 boîte large en haut + 2 boîtes en bas</td>
+        <td>
+          <a class="btn btn-abs" href="fig3_absolu.html">Absolu</a>
+          <a class="btn btn-rel" href="fig3_relatif.html">Relatif</a>
+          <a class="btn btn-bst" href="fig3_bootstrap.html">Bootstrap</a>
+        </td>
+      </tr>
+      <tr>
+        <td>Figure 4</td>
+        <td>3 boîtes en grille 2×2 (coin bas-droit vide)</td>
+        <td>
+          <a class="btn btn-abs" href="fig4_absolu.html">Absolu</a>
+          <a class="btn btn-rel" href="fig4_relatif.html">Relatif</a>
+          <a class="btn btn-bst" href="fig4_bootstrap.html">Bootstrap</a>
+        </td>
+      </tr>
+    </tbody>
+  </table>
+
+</body>
+</html>

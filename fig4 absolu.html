@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <title>Figure 4 – Positionnement Absolu</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 30px;
+    }
+
+    .container {
+      position: relative;
+      width: 290px;
+      height: 235px;
+    }
+
+    .box {
+      position: absolute;
+      width: 138px;
+      height: 108px;
+      border: 2px solid #5b7fa6;
+    }
+
+    /* Rose  : haut gauche */
+    .rose  { background-color: #e8a0a0; top: 0px;    left: 0px;    }
+    /* Bleu  : haut droite */
+    .bleu  { background-color: #6d9ed4; top: 0px;    left: 148px;  }
+    /* Beige : bas gauche */
+    .beige { background-color: #c8b98a; top: 120px;  left: 0px;    }
+    /* Bas droite : vide — pas de 4ème div */
+  </style>
+</head>
+<body>
+
+  <h2>Figure 4 – Positionnement Absolu</h2>
+
+  <div class="container">
+    <div class="box rose"></div>
+    <div class="box bleu"></div>
+    <div class="box beige"></div>
+    <!-- 4ème cellule intentionnellement vide -->
+  </div>
+
+</body>
+</html>
