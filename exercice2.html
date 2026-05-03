@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Exercice 2 – CSS Pure</title>
+  <style>
+
+    * {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: Arial, sans-serif;
+      padding: 15px;
+      background: #f5f5f5;
+    }
+
+    .page {
+      display: flex;
+      flex-direction: column;
+      gap: 10px;
+      max-width: 960px;
+      margin: 0 auto;
+    }
+
+    .bloc {
+      padding: 25px 15px;
+      text-align: center;
+      font-size: 1.1em;
+      font-weight: bold;
+      border: 2px solid #aaa;
+    }
+
+    .header { background-color: #6d9ed4; color: white; border-color: #5b7fa6; }
+    .footer { background-color: #9988bb; color: white; border-color: #776699; }
+    .s0     { background-color: #c8b98a; color: #333;  border-color: #a09070; }
+    .s1     { background-color: #d0d8f0; color: #333;  border-color: #8899cc; }
+    .s2     { background-color: #e8c0c0; color: #333;  border-color: #cc8888; }
+    .s3     { background-color: #c8ddb0; color: #333;  border-color: #88aa66; }
+    .s4     { background-color: #f0d8b0; color: #333;  border-color: #cc9966; }
+    .s5     { background-color: #00ccee; color: white; border-color: #00aacc; }
+    .s6     { background-color: #00ccee; color: white; border-color: #00aacc; }
+
+    .row-4,
+    .row-2 {
+      display: flex;
+      gap: 10px;
+    }
+
+    .row-4 .bloc {
+      flex: 1;
+      padding: 50px 10px;
+    }
+
+    .row-2 .bloc {
+      flex: 1;
+      padding: 50px 10px;
+    }
+
+    @media (max-width: 768px) {
+
+      .row-4 {
+        flex-wrap: wrap;
+      }
+
+      .row-4 .bloc {
+        flex: 0 0 calc(50% - 5px);
+      }
+
+      .row-2 {
+        flex-direction: column;
+      }
+
+    }
+
+    @media (max-width: 480px) {
+
+      .row-4 {
+        flex-direction: column;
+      }
+
+      .row-4 .bloc {
+        flex: 1 1 100%;
+      }
+
+      .row-2 {
+        flex-direction: column;
+      }
+
+    }
+
+  </style>
+</head>
+<body>
+
+  <div class="page">
+
+    <div class="bloc header">En-tête de page</div>
+
+    <div class="bloc s0">Section 0</div>
+
+    <div class="row-4">
+      <div class="bloc s1">Section 1</div>
+      <div class="bloc s2">Section 2</div>
+      <div class="bloc s3">Section 3</div>
+      <div class="bloc s4">Section 4</div>
+    </div>
+
+    <div class="row-2">
+      <div class="bloc s5">Section 5</div>
+      <div class="bloc s6">Section 6</div>
+    </div>
+
+    <div class="bloc footer">Pied de page</div>
+
+  </div>
+
+</body>
+</html>
